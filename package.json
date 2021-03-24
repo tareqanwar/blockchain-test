@@ -1,0 +1,14 @@
+{
+  "name": "blockchain-test",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "git@github.com:tareqanwar/blockchain-test.git",
+  "author": "Tareq Anwar <trqnwr@gmail.com>",
+  "license": "GNU",
+  "dependencies": {
+    "bitcoinjs-lib": "^5.2.0",
+    "bitcoinjs-message": "^2.2.0",
+    "body-parser": "^1.19.0",
+    "hex2ascii": "^0.0.3"
+  }
+}
