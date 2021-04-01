@@ -16,9 +16,9 @@ class Block {
         return new Promise((resolve, reject) => {
             const currentHash = self.hash;
                                             
-            const calucaltedHash = SHA256(JSON.stringify(self)).toString();
+            const calculatedHash = SHA256(JSON.stringify(self)).toString();
 
-            return resolve(currentHash === calucaltedHash);
+            return resolve(currentHash === calculatedHash);
         });
     }
     
@@ -31,10 +31,10 @@ class Block {
             const parsedBody = JSON.parse(decodedBody);
 
             if(self.previousBlockHash === null) {
-                reject('Can\'t return genesis block');
+                resolve(null);
             }
 
-            return resolve(parsedBody);
+            resolve(parsedBody);
         });
     }
 
